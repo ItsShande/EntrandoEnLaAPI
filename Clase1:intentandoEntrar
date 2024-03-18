@@ -1,0 +1,13 @@
+from omdbapi.movie_search import GetMovie
+
+#primero tenemos que entrar a la api.
+# Luego tenemos
+#my key f83dc932
+
+import requests, json, dotenv, logging, os
+
+
+pelicula = GetMovie(api_key='f83dc932')
+
+pelicula.get_movie(title='Interstellar')
+
